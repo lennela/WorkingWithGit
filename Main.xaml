@@ -79,20 +79,17 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1032.6666666666665,478" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="578,654.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="DisplayList" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="CountriesList">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List (of String) from {&quot;Germany&quot;, &quot;Spain&quot;, &quot;Japan&quot;, &quot;Brazil&quot;, &quot;India&quot;, &quot;China&quot;}" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List (of String) from {&quot;Germany&quot;, &quot;Spain&quot;, &quot;Japan&quot;, &quot;Brazil&quot;, &quot;India&quot;, &quot;China&quot;}]" Name="CountriesList" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;test&quot;]" />
     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,170.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Sort">
       <InvokeMethod.TargetObject>
         <InArgument x:TypeArguments="scg:List(x:String)">[CountriesList]</InArgument>
